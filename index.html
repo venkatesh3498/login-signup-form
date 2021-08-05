@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <button id="login" onclick="login()">
+            LOGIN
+        </button>
+        <button id="signup" onclick="signup()">
+            SIGNUP
+        </button>
+    </nav>
+    <div class="wrapper signup">
+        <form onsubmit="reg()">
+            <input type="email" required placeholder="enter your mail id" class="size"><br>
+            <input type="password" required placeholder="enter password" class="size pas1"><br>
+            <input type="password" required placeholder="re enter your password" class="size pas2">
+            <br>
+            <input type="submit" value="submit" class="but">
+        </form>
+    </div>
+    <div class="wrapper login">
+        <form onsubmit="verify()">
+            <input type="text"  placeholder="email or username" class="size loem" required><br>
+            <input type="password"  placeholder="password" class="size lops" required><br>
+            <a href="" target="_blank" class="a">forgot password</a>
+
+            <input type="submit" value="submit" class="but">
+        </form>
+    </div>
+    
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
