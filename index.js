@@ -33,3 +33,16 @@ function reg(){
         alert("please enter same password");
     }
 }
+var modal = document.getElementById("id01");
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        $(".mview").show();
+        $(".moo").text("This Is Modal Login Page And Login Button Also Hides After Clicking It");
+    }
+}
+function loginn() {
+    $(".mview").hide();
+    $(".moo").text("you got modal login page click anywhere to close it");
+    document.getElementById('id01').style.display='block';
+}

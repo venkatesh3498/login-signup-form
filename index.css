@@ -1,3 +1,7 @@
+.login1{
+    z-index: 2;
+}
+
 .login{
     display: none;
 }
@@ -21,13 +25,6 @@
     width: auto;
     padding: 45px;
     border-radius: 25px;
-    box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
 }
 .size{
     margin: 5%;
@@ -78,10 +75,153 @@ nav button:hover{
     border-color: #719ECE;
     box-shadow: 0 0 10px #719ECE;
 }
+.login_2{
+    z-index: 3;
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    top: 0;
+    left: 0;
+    overflow: over;
+    background-color: rgba(0,0,0,0.4);
+}
+.login_2_form{
+    border: 2px solid inherit;
+    width:max-content;
+    padding: 30px;
+    margin: auto;
+    background-color: white;
+}
+.login_2_form:hover{
+    border-radius: 25px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #1BFFFF,#662D8C , #ED1E79 ,#EE9CA7 ,#FFDDE1);
+    background-size: 800% 800%;
+    animation: colorchanger 8s ease infinite;
+    
+}
+.login_2 input{
+    border: none;
+    outline: none;
+    border-left: 1px solid black;
+    background-color: inherit;
+}
 
+
+.inputwrap,.passwrap{
+    border: 1px solid black;
+    border-width: 0.5px;
+    width: 275px;
+    margin: auto;
+    margin-bottom: 5%;
+    padding: 15px;
+}
+.content_1,.content_2{
+    display: flex;
+    margin-top: 9% !important;
+    width: 275px;
+    justify-content: space-between;
+    margin: auto;
+    align-items: baseline;
+}
+.radio{
+    margin-right: -75px;
+    background-color: inherit;
+}
+.bi{
+    margin-right: 1.5%;
+}
+.loginbut_2{
+    padding:12px 21px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.dash{
+    width: 180px;
+    margin: auto;
+    cursor: default;
+}
+.social{
+    width: 245px;
+    margin: auto;
+}
+.fb{
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    padding: 9px 20px;
+    
+}
+.twi{
+    font-size: 1rem;
+    background-color: pink;
+    padding: 9px 20px;
+    
+}
+.goo{
+    background-color: white;
+    font-size: 1rem;
+    padding: 9px 20px;
+    background-color: rgba(190, 42, 190, 0.6);
+} 
+.goo a{
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+    padding-right: 34px;
+}
+.fb a{
+    color: white;
+    text-decoration: none;
+    padding: 0 17px;
+}
+.twi a{
+    color: black;
+    text-decoration: none;
+    background-color: pink;
+    padding: 0 34px 0 17px;
+}
+.animate{
+    animation: animatezoom 0.5s ease;
+}
+@keyframes colorchanger {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
 @media screen and (max-width:450px){
     .wrapper{
         width: 250px;
         margin:auto;
+    }
+}
+@media screen and (max-width:980px) {
+    .radio{
+        margin-right: -40px;
+    }
+    .social{
+        width: 270px;
+    }
+    .fb a{
+        padding-right: 30px;
+    }
+    .goo a{
+        padding-right: 20px;
+    }
+    .twi a{
+        padding-right: 47px;
     }
 }
